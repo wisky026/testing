@@ -1,0 +1,146 @@
+/* styles.css */
+
+body {
+    background-color: #370558; /* purple */
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styles */
+.w3-bar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items at both ends horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100px; /* Adjust height of navigation bar */
+    background-color: #370558; /* Royal purple background color */
+    color: white; /* Text color */
+}
+
+.w3-bar-item {
+    padding: 0 20px; /* Adjust horizontal padding */
+    font-size: 20px; /* Adjust font size for all navigation items */
+}
+
+.w3-bar-item:hover {
+    background-color: #370558; /* Darker purple on hover */
+}
+
+.w3-button {
+    padding: 15px 25px; /* Button padding */
+    background-color: #370558; /* Purple button color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Cursor style */
+}
+
+.w3-button:hover {
+    background-color: #370558; /* Darker purple on hover */
+}
+
+.w3-image {
+    width: 100%;
+}
+
+.w3-center {
+    text-align: center;
+}
+
+/* nav bar background color */
+.w3-bar {
+    background-color: #370558 !important; /* Override W3.CSS purple with your custom shade */
+    border-bottom-color: #370558; /* Adjust border color if needed */
+}
+/* Logo position */
+.w3-bar {
+    position: relative; /* Ensure relative positioning for absolute positioning */
+}
+
+img.logo {
+    position: absolute; /* Position the logo absolutely */
+    left: 10px; /* Adjust the left position as needed */
+    top: 50%; /* Align vertically centered */
+    transform: translateY(-50%); /* Adjust for vertical alignment */
+    width: 120px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Nav Text position */
+.navtext {
+    position: absolute;
+    left: 250px; /* Adjust the left position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 700px; /* Adjust maximum width as needed */
+    height: 100px; /* Maintain aspect ratio */
+}
+/* CSS for Background Video */
+.video-container {
+    position: relative; /* Relative positioning for containing block */
+    width: 100%; /* Full width of container */
+    height: 500px; /* Specify the height you want */
+    overflow: hidden; /* Hide overflow content */
+    margin-top: 100px; /* Adjust margin to position video below navigation */
+}
+
+.bg-video {
+    position:absolute ; /* Absolute positioning for the video */
+    top: 0; /* Align to top of .video-container */
+    left: 0; /* Align to left of .video-container */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Contact Section */
+/* Contact Section */
+#contact {
+    padding: 50px 5px;
+    background-color: #2f044b;
+    margin-top: 0; /* Remove extra margin */
+    font-size: 12px;
+    color: #ffffff;
+}
+
+#contact form {
+    max-width: 600px; /* Maximum width for form */
+    margin: 0 auto; /* Center align form */
+}
+
+#contact  {
+    font-size: 12px; /* Adjust font size */
+    color: #ffffff; /* Adjust font color */
+}
+#contact {
+    padding: 16px; /* Adjust padding as needed */
+    height: 50; /* Adjust height as needed */
+  }
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    margin-top: 450px; /* Adjust this to position it right below the video */
+}
+
+.image-gallery img {
+    width: 300px !important;
+    height: 300px !important;
+    border-radius: 10px;
+}
+/* Adjusted CSS for Image Gallery Buttons */
+
+
+.image-gallery a:hover {
+    background-color: #2f044b; /* Darker color on hover */
+}
+
+.image-gallery img {
+    width: 300px; /* Image width */
+    height: 300px; /* Image height */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.image-gallery a:hover img {
+    transform: scale(1.1); /* Increase size by 10% on hover */
+}
